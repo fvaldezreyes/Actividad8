@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Actividad8.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Priemer aplicación en Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label x:Name="lblEjemplo" Text="Este es un ejemplo de una etiqueta con la propiedad TEXT" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Introduce tu nombre para iniciar: " FontSize="16" Padding="30,0,30,0"/>
+        <Entry x:Name="txtNombre" Placeholder="Tu nombre aquí" FontSize="Medium"/>
+
+        <Button x:Name="btnMsg1" 
+                Text="BOTÓN DE BIENVENIDA"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="btnMsg1_Clicked"/> 
+
+        <Label x:Name="lblSaludo" FontSize="Large"/>
+        
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Ejemplo de una etiqueta con transformación de formato y el atributo NEGRITA "/>
+                        <Span Text="Soy un texto en negritas" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
